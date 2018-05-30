@@ -1,0 +1,17 @@
+Should I really GO ?
+This is !tutorial
+
+Muhammad Falak R Wani
+@iamfrw
+falakreyaz@gmail.com
+
+* Agenda
+
+- Introduction to go (golang -- searching)
+- Motivation
+- Basics of go
+- Some coding
+
+* A tribute to the demo gods
+
+.play -edit src/hello.go
