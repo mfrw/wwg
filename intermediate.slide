@@ -113,3 +113,11 @@ Write a RPC Adder. (Ovbiously an overkill)
 * RPC II (client)
 
 .code src/rpc/client.go /START OMIT/,/END OMIT/
+
+* REST API
+
+.play -edit src/rest/main.go /START OMIT/,/END OMIT/
+
+* Context
+
+* Distributed Tracing & Middlewares
