@@ -19,3 +19,17 @@ falakreyaz@gmail.com
 - Distributed Tracing
 
  [*] => If you dont know
+
+* Compilation
+
+- {Code,Lib,Bin} Organization
+- Tests
+ thing.go thing_test.go
+- Pragmas
+ e.g: noinline
+- Compiler flags
+ go build -gcflags "-l" some_file.go
+- Build Tags
+ go tool dist list
+- What happens while compilation
+ GOSSAFUNC=random_func go build somefile.go
