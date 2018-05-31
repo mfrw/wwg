@@ -15,3 +15,44 @@ falakreyaz@gmail.com
 * A tribute to the demo gods
 
 .play -edit src/hello.go
+
+* The boring way:
+
+- I already know *X* (python, java...) so, why learn a new language ?
+- What problems does it solve ?
+- Java, Python ... are established, this is a new commer
+- class complicated implements something_more_complicated
+- How many have seen any standard library (libc, javalib, python-lib) ?
+
+* tl;dr answers
+
+* Easy
+
+* Profiling
+
+* Concurrency
+
+* Tracing
+
+* Race-Detection
+
+* Testing
+
+* Benchmarking
+
+* Toolchain
+
+* How did it all start ?
+
+- Ken Thompson (Turing award winner)
+- Rob Pike
+- Russ Cox
+
+Legend has it, Ken and Rob were waiting for a project to compile.
+
+PS: Due respect for Denis Ritche & Dough McIlroy, nonetheless.
+
+* Aside: go compiles quickly
+
+- Why C/C++ compilation is slow ?
+- How does go solve the problem ?
