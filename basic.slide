@@ -128,9 +128,21 @@ Just one looping construct *for*
 
 .play -edit src/map.go
 
+* Defer
+
+.play -edit src/defer.go /START OMIT/,/END OMIT/
+
+* Panic/Recover
+
+.play -edit src/panic.go /START OMIT/,/END OMIT/
+
 * Language features
 
 - closures
 - goroutines
 - channels
 - interfaces
+- embedding
+- struct tags
+- build tags
+- garbage collector
