@@ -16,7 +16,7 @@ falakreyaz@gmail.com
 - RPC
 - REST API's
 - Context
-- Distributed Tracing
+- Distributed Tracing & Middlewares
 
  [*] => If you dont know
 
@@ -33,3 +33,83 @@ falakreyaz@gmail.com
  go tool dist list
 - What happens while compilation
  GOSSAFUNC=random_func go build somefile.go
+
+* Vendoring
+
+* Go std-lib
+
+Some important packages
+
+- fmt
+- log
+- os
+- flag
+- encoding
+- strconv
+- io
+- bufio
+- sync
+- net
+- runtime
+
+* Channles
+
+The idea started from a seminal work *CSP*, communicating sequential processes by Tony Hoare.
+
+- Add an example of channel
+
+* Goroutines
+
+They are userlevel threads implemented by the go runtime.
+
+- Extremely Cheap as opposed to Actual Threads
+- Fundamental Concurrency primitives of the language
+
+.play -edit src/goroutines.go /START OMIT/,/END OMIT/
+
+* Interfaces
+
+- You don't implement interfaces explicitly !
+- Empty interface means anything !
+
+* Containers
+
+- An abstraction to package & ship code
+- Included cheat-sheet slides for docker
+- Makes Deployment very easy
+- Is the basis of *Microservices*
+
+ As a refrence I have added a cheat-sheet for docker also
+
+* RPC I
+
+Remote Procedure Call is the fundamental primitive of Distributed Systems Programming.
+
+- It has many names: RMI, RPC ...
+- The Idea is to Distribute Work to different end points.
+- Use a *protocol* compiler to abstract transport details. (rpcgen)
+- Almost everything you interact on the INTERNET is an e.g of Distributed System.
+
+.code  src/adder/adder.x
+ rpcgen -a adder.x
+
+* RPC II
+
+Write a RPC Adder. (Ovbiously an overkill)
+
+- Create a type and add methods to be exported.
+
+.code src/rpc/common.go /START OMIT/,/END OMIT/
+
+* RPC II (server)
+
+- Export the type by registering it.
+
+.code src/rpc/server.go /START OMIT/,/END OMIT/
+
+- Debug path
+ http://addr:port/debug/rpc
+
+* RPC II (client)
+
+.code src/rpc/client.go /START OMIT/,/END OMIT/
