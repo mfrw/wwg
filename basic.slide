@@ -75,7 +75,7 @@ PS: Due respect for Denis Ritche & Dough McIlroy, nonetheless.
 
 - Cross compiling
 - Static binaries (helpful in container envs)
-- Relaticely leaner build times
+- Relatively leaner build times
 - Battries included
 - All round devlopement, testing, benchmarking ...
 
@@ -121,6 +121,10 @@ Just one looping construct *for*
 * Slices
 
 .play -edit src/slice.go
+
+* Map
+
+.play -edit src/map.go
 
 * Language features
 
