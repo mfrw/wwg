@@ -56,3 +56,75 @@ PS: Due respect for Denis Ritche & Dough McIlroy, nonetheless.
 
 - Why C/C++ compilation is slow ?
 - How does go solve the problem ?
+
+* Structure of a Typical go program
+
+- package
+- imports
+- global vars
+- funcs
+- func *main* *
+
+* Object Oriented ?
+
+- Although it feels like OO it is not.
+- It features embeding. (latter)
+- Interfaces in go are very powerful.
+
+* Let me try to sell go
+
+- Cross compiling
+- Static binaries (helpful in container envs)
+- Relaticely leaner build times
+- Battries included
+- All round devlopement, testing, benchmarking ...
+
+* Some more
+
+- Easy and safe *
+- Statically Typed
+- Compiled
+- Encourages tinkering
+
+* Use cases for go
+
+- Used as a systems language
+- Used for a web dev too
+- Docker is written in go
+- Kubernetes is written in go
+- It is a standard langauage for Cloud Native env
+
+* Lets start coding
+
+* Values, Variables & Constatns
+
+.play -edit src/val_var.go
+
+* Loops
+
+Just one looping construct *for*
+
+.play -edit src/loops.go
+
+* Conditionals
+
+.play -edit src/if-else.go
+
+* Switch
+
+.play -edit src/switch.go
+
+* Arrays
+
+.play -edit src/array.go
+
+* Slices
+
+.play -edit src/slice.go
+
+* Language features
+
+- closures
+- goroutines
+- channels
+- interfaces
