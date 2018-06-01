@@ -56,7 +56,7 @@ Some important packages
 
 The idea started from a seminal work *CSP*, communicating sequential processes by Tony Hoare.
 
-- Add an example of channel
+.play -edit src/channel.go
 
 * Goroutines
 
